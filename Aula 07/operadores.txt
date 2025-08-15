@@ -1,0 +1,88 @@
+OPERADORES
+
+- Aritméticos;
+- Atribuição;
+- Relacionais;
+- Lógicos;
+- Ternário;
+
+1. ARITMÉTICOS:
+
+. 5 +  2 = 7;
+. 5 —  2 = 3;
+. 5 *  2 = 10;
+. 5 /  2 = 2.5;
+. 5 %  2 = 1 -> usado para pegar o resultado da divisão inteira. Não usado para saber a porcentagem!!
+. 5 ** 2 = 25 -> operador de potência, sendo o mesmo que 5²;
+
+Observações:
+
+• Deve seguir a ordem de precedência dos operadores aritméticos, da mesma forma que segue a regra na matemática normal, se tiver fora de ordem, a conta estará errada!
+
+Exemplo:
+
+Resultado errado:
+x = 5 + 3 / 2
+x = 8 / 2
+x = 4
+
+Resultado correto:
+x = 5 + 3 / 2
+x = 5 + 1.5
+x = 6.5
+
+Use os Separadores Aritméticos que a matemática já fornece, no exemplo acima ficaria desta forma:
+
+x = ( 5 + 3 ) / 2
+x = 8 / 2
+x = 4
+
+Desta forma a conta ficará correta!
+
+ORDEM DE PRECEDÊNCIA DE OPERADORES:
+
+⬇ ();
+⬇ **;
+⬇ *  /  %
+⬇ +  —
+⬇ 
+
+2. ATRIBUIÇÃO:
+
+var a = 5 + 3         -> a =  8;
+var b = a % 5         -> b =  3;
+var c = 5 * b ** 2    -> c = 45;
+var d = 10 — a / 2    -> d =  6;
+var e = 6 * 2 / d     -> e =  2;
+var f = b % e + 4 / e -> f =  3;
+
+É possivél fazer Auto-Atribuições usando a variável e os operadores:
+
+var n = 3
+
+n = n + 4 -> n = 7;
+n = n - 5 -> n = 2;
+n = n * 4 -> n = 8;
+n = n / 2 -> n = 4;
+n = n ** 2 -> n = 16;
+n = n % 5 -> n = 1;
+
+A variável N assumiu vários valores usando a Auto-Atribuição, tendo como valor final o número 1.
+
+Há uma maneira mais simples de reescrever estás mesmas contas, mas deve-se seguir uma regra:
+
+A variével receber ela mesma na conta, veja as contas reescrita pra entender:
+
+n += 4;
+n —= 5;
+n *= 4;
+n /= 2;
+n **= 2;
+n %= 5;
+
+INCREMENTO
+
+var x = 5
+
+x = x + 1  ->  x += 1  ->  x ++;
+x = x — 1  ->  x —= 1  ->  x --;
