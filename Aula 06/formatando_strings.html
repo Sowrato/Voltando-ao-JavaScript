@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Olá Mundo!</title>
+        <style type="text/css" media="all">
+            
+            body {
+                background-color: black;
+                color: lightgray;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Olá Mundo!</h1>
+            <p>Já me livrei da maldição!</p>
+            <span id="span"></span>
+        </header>
+        <script>
+
+            /*
+            
+            Formatos para Strings:
+            
+            • s.length -> quantos caracteres a string tem;
+            • s.toUpperCase() -> tudo para 'MAIUSCULAS';
+            • s.toLowerCase() -> tudo para 'minusculas';
+            
+            */
+            
+            var nome = prompt('Qual é o seu nome?')
+            
+            while (nome == ""){
+                alert("Digite seu nome!")
+                var nome = prompt('Qual é o seu nome?')
+            }
+            
+            document.write(`<p>Seu nome é ${nome}, seu nome tem ${nome.length} letras!</p>`)
+            
+            document.write(`<p>Em maiúsculas fica: ${nome.toUpperCase()}!</p>`)
+            
+            document.write(`<p>Já em minúsculas fica: ${nome.toLowerCase()}</p>`)
+            
+            
+            
+            
+        </script>
+    </body>
+</html>
