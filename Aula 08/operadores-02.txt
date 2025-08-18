@@ -1,0 +1,60 @@
+OPERADORES
+
+- Aritméticos;
+- Atribuição;
+- Relacionais;
+- Lógicos;
+- Ternário;
+
+3. RELACIONAIS:
+
+. 5   >  2  --> true; maior
+. 7   <  4  --> false; menor
+. 8  >=  8  --> true; maior ou igual
+. 9  <=  7  --> false; menor ou igual
+. 5  ==  5  --> true; igual
+. 4  !=  4  --> false; diferente
+. 5 === '5' --> false; identidade
+
+4. LÓGICOS:
+
+. !  --> Negação;
+
+!true  --> false;
+!false --> true;
+
+. && --> Conjunção, mesmo que 'E'
+
+true  && true  --> true;
+true  && false --> false;
+false && true  --> false;
+false && false --> false;
+
+. || --> Disjunção, mesmo que 'OU'
+
+true  || true  --> true;
+true  || false --> true;
+false || true  --> true;
+false || false --> false;
+
+ORDEM DE EXECUÇÃO:
+
+1° () , ** , / ... --> Aritméticos;
+2° > , < , >= ... --> Relacionais;
+3° !  --> Negação; --\
+4° && --> E;       ---> Lógicos;
+5° || --> OU;      --/
+
+5. TERNÁRIO:
+
+. teste ? true : false
+
+. 5 + 5 == 10 ? true : false
+. true
+
+Ele faz o um teste, no caso acima, testou se 5 + 5 == 10, como era 10, mostrou o primeiro comando que era "true", se não fosse 10 o resultao, o teste mostraria o segundo comando, que é 'false'.
+
+. 5 + 5 == 5 ? "Sim, correto" : "Não, tá errado"
+. "Não, tá errado"
+
+Neste exemplo ele testou a mesma conta e mostrou o segundo resultado, porque o primeiro estava errado.
