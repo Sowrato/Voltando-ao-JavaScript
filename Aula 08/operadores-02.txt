@@ -52,7 +52,7 @@ ORDEM DE EXECUÇÃO:
 . 5 + 5 == 10 ? true : false
 . true
 
-Ele faz o um teste, no caso acima, testou se 5 + 5 == 10, como era 10, mostrou o primeiro comando que era "true", se não fosse 10 o resultao, o teste mostraria o segundo comando, que é 'false'.
+Ele faz o um teste, no caso acima, testou se 5 + 5 == 10, como era 10, mostrou o primeiro comando que era "true", se não fosse 10 o resultado, o teste mostraria o segundo comando, que é 'false'.
 
 . 5 + 5 == 5 ? "Sim, correto" : "Não, tá errado"
 . "Não, tá errado"
