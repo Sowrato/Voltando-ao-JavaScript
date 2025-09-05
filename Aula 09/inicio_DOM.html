@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estudos com DOM</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: white;
+                color: black;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+            }
+
+            h1 {
+                margin: 20px 0;
+            }
+
+            p {
+                margin: 5px 0;
+            }
+
+            button {
+                margin-top: 20px;
+                padding: 15px 20px;
+                background-color: black;
+                color: white;
+                border-radius: 10px;
+                cursor: pointer;
+                border: 2px solid white;
+                transition: 0.5s;
+            }
+
+            button:hover {
+                background-color: white;
+                color:black;
+                border: 2px solid black;
+                box-shadow: 2px 2px 3px black;
+            }
+
+            div {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Primeiros passos com DOM</h1>
+        <p>Aqui vai o resultado</p>
+        <button onclick="clicou()">CLIQUE AQUI
+        </button>
+        <script>
+            var corpo = document.querySelector('body')
+
+            function clicou(){
+                console.log('clicou')
+                corpo.style.transition = '0.3s'
+                if (corpo.style.backgroundColor == 'white') {
+                    corpo.style.backgroundColor = 'black'
+                    corpo.style.color = 'white'
+                    
+                } else if (corpo.style.backgroundColor == 'black') {
+                    corpo.style.backgroundColor = 'white'
+                    corpo.style.color = 'black'
+                } else {
+                    corpo.style.backgroundColor = 'white'
+                    corpo.style.color = 'black'
+                }
+                
+
+            }
+        </script>
+    </body>
+</html>
