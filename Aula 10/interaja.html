@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Intejara</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+            }
+
+            #clique {
+                padding: 20px;
+                border: 2px solid black;
+                width: 150px;
+                margin: 50px auto;
+                background-color: lightgray;
+                border-radius: 10px;
+                transition: 0.4s;
+                letter-spacing: 2px;
+            }
+
+            #clique:hover {
+                background-color: black;
+                color: white;
+                box-shadow: 2px 2px 3px gray;
+                transform: scale(1.2,1.2);
+                letter-spacing: 4px;
+            }
+        </style> 
+    </head>
+    <body>
+        <div id="clique" onclick="clique()">INTERAJA</div>
+
+        <script>
+
+            function clique() {
+
+                alert('Clicou')
+
+            }
+
+        </script>
+
+    </body>
+</html>
+
+<!-- 
+
+    EVENTOS COM MOUSE
+
+ 1. mouseenter - quando o mouse entra na <div>;
+ 2. mousemove - quando o mouse se moimenta dentro da <div>;
+ 3. mousedown - quando clica e segura o botão do moouse dentro da <div>;
+ 4. mouseup - quando soltar o botão do mouse dentr da <div>;
+ 5. click - quando aperta e solta o botao do mouse dentro da <div>;
+ 6. mouseout - quando sai da <div> com o mouse;
+
+-->
