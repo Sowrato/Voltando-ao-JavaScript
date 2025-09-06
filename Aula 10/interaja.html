@@ -25,6 +25,8 @@
                 border-radius: 10px;
                 transition: 0.4s;
                 letter-spacing: 2px;
+                cursor: pointer;
+                user-select: none;
             }
 
             #clique:hover {
@@ -37,13 +39,26 @@
         </style> 
     </head>
     <body>
-        <div id="clique" onclick="clique()">INTERAJA</div>
+        <div id="clique">INTERAJA</div>
 
         <script>
 
+            var corpo = document.querySelector('body')
+            var botao = document.querySelector('#clique')
+            botao.addEventListener('click', clique)
+            
             function clique() {
 
-                alert('Clicou')
+                if(corpo.style.backgroundColor == 'white') {
+                    corpo.style.backgroundColor = 'black'
+                    corpo.style.color = 'white'
+                } else if (corpo.style.backgrounColor == 'black') {
+                    corpo.style.backgroundColor = 'white'
+                    corpo.style.color = 'black'
+                } else {
+                    corpo.style.backgroundColor = 'white'
+                    corpo.style.color = 'black'
+                }
 
             }
 
